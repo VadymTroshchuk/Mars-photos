@@ -13,7 +13,7 @@ private const val BASE_URL =
         .build()
     interface MarsApiService {
         @GET("photos")
-        fun getPhotos(): String
+        suspend fun getPhotos(): String
     }
 
     object MarsApi {
